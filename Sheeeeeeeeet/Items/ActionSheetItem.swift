@@ -73,7 +73,7 @@ open class ActionSheetItem: NSObject {
         cell.selectionStyle = .default
         cell.separatorInset = appearance.separatorInsets
         cell.tintColor = appearance.tintColor
-        cell.textLabel?.textAlignment = .left
+        cell.textLabel?.textAlignment = .center
         cell.textLabel?.textColor = appearance.textColor
         cell.textLabel?.font = appearance.font
         cell.detailTextLabel?.text = subtitle
