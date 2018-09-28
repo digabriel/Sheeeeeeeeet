@@ -57,7 +57,7 @@ open class ActionSheetItem: NSObject {
     open var value: Any?
 
     open var appearance: ActionSheetItemAppearance
-    open var cellStyle: UITableViewCellStyle = .default
+    open var cellStyle: UITableViewCell.CellStyle = .default
     open var tapBehavior = TapBehavior.dismiss
     
     
@@ -68,6 +68,7 @@ open class ActionSheetItem: NSObject {
     }
     
     open func applyAppearance(to cell: UITableViewCell) {
+        cell.backgroundColor = appearance.backgroundColor
         cell.imageView?.image = image
         cell.textLabel?.text = title
         cell.selectionStyle = .default
